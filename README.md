@@ -1,4 +1,4 @@
-# Dotfiles!
+## Dotfiles!
 
 This is my dotfiles repository for storing, backing up and sharing my shell and
 program configuration files. It's powered by a simple little Rakefile.
@@ -11,7 +11,7 @@ automatically expanded to their proper file path in $HuOME. For example,
 
 ### Commands
 
-`rake symlinks`: Default task, generates symlinks
+`rake symlinks` Default task, generates symlinks
 
-`rake uninstall`: Removes symlinks. Be careful with this! It isn't as gentle as
+`rake uninstall` Removes symlinks. Be careful with this! It isn't as gentle as
 it should be (for now).
