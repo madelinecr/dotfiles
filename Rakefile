@@ -22,12 +22,15 @@ end
 desc "Symlink vim config files to default locations"
 task :symlink do
 
+  # TODO Make this bit smarter, ignoring symlinks and dying on regular files.
   symlinks.each_value do |item|
     if File.exists?(item)
       raise <<-eos
         Error: Existing vim configuration detected. Please
         remove all vim configuration files before attempting to
         install this configuration.
+
+        Offending files: #{green(item)}"
       eos
     end
   end

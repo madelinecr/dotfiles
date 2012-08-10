@@ -36,5 +36,19 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin:$HOME/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+. $HOME/bin/z.sh
+function precmd () {
+  z --add "$(pwd -P)"
+}
+
+# Aliases
+alias gitss="git status -s"
+alias gits="git status"
+alias gitc="git commit"
+alias gitcachediff="git diff --cached --color"
+alias gitdiff="git diff --color"
+alias gitcstatdiff="git diff --cached --stat --color"
+alias gitstatdiff="git diff --stat --color"
