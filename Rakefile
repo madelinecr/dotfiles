@@ -22,29 +22,21 @@ end
 desc "Symlink vim config files to default locations"
 task :symlink do
 
-  # TODO Make this bit smarter, ignoring symlinks and dying on regular files.
-  symlinks.each_value do |item|
-    if File.exists?(item)
-      raise <<-eos
-        Error: Existing vim configuration detected. Please
-        remove all vim configuration files before attempting to
-        install this configuration.
-
-        Offending files: #{green(item)}"
-      eos
-    end
-  end
-
   symlinks.each_pair do |src, dest|
-    begin
-      File.symlink(src, dest)
-      puts "Symlinking from #{green(src)} to #{green(dest)}"
-    rescue NotImplementedError
-      puts "Error: Symlinks are not supported on your system"
+    if File.exists?(dest) and not File.symlink?(dest)
+      raise "Error: File conflict, cowardly refusing to squash #{red(dest)}"
+    elsif File.symlink?(dest)
+      puts "File #{yellow(dest)} already a symlink, skipping"
+    else
+      begin
+        File.symlink(src, dest)
+        puts "Symlinking #{green(dest)}"
+      rescue NotImplementedError
+        puts "Error: Symlinks are not supported on your system."
+      end
     end
   end
 end
-
 
 desc "Remove configuration symlinks if they exist"
 task :uninstall do
