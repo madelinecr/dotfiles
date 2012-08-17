@@ -1,0 +1,24 @@
+[submodule "config/vim/bundle/nerdtree"]
+	path = config/vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree
+[submodule "config/vim/bundle/supertab"]
+	path = config/vim/bundle/supertab
+	url = git@github.com:ervandew/supertab.git
+[submodule "config/vim/bundle/vim-colors-solarized"]
+	path = config/vim/bundle/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule "config/vim/bundle/vim-powerline"]
+	path = config/vim/bundle/vim-powerline
+	url = git@github.com:Lokaltog/vim-powerline.git
+[submodule "config/vim/bundle/vim-rails"]
+	path = config/vim/bundle/vim-rails
+	url = git@github.com:tpope/vim-rails.git
+[submodule "config/vim/bundle/vim-ruby"]
+	path = config/vim/bundle/vim-ruby
+	url = git@github.com:vim-ruby/vim-ruby.git
+[submodule "config/vim/bundle/FuzzyFinder"]
+	path = config/vim/bundle/FuzzyFinder
+	url = git@github.com:vim-scripts/FuzzyFinder.git
+[submodule "config/vim/bundle/L9"]
+	path = config/vim/bundle/L9
+	url = git@github.com:vim-scripts/L9.git

@@ -1,0 +1,56 @@
+" set rtp+=~/.vim/bundle/vundle/
+" call vundle#rc()
+
+"Bundle 'scrooloose/nerdtree'
+"Bundle 'ervandew/supertab'
+"Bundle 'tpope/vim-rails'
+
+call pathogen#infect()
+
+let g:solarized_termcolors=256
+let g:solarized_hitrail=1
+colorscheme solarized
+set background=dark
+
+set t_Co=256
+
+set autoindent
+set smartindent
+
+set tabstop=2
+set shiftwidth=2
+
+set showmatch
+set guioptions-=T
+
+let os = substitute(system('uname'), "\n", "", "")
+if os == "Darwin"
+  set guifont=Monaco:h9
+else
+  set guifont=Monospace:8
+endif
+set vb t_vb=
+syntax on
+
+set ruler
+set incsearch
+set textwidth=80 
+set number
+
+filetype plugin indent on
+set expandtab
+
+" Shortcuts
+
+map <C-f> :NERDTreeToggle<CR>
+map <C-j> :FufCoverageFile<CR>
+map <C-i> :FufRenewCache<CR>
+" Erroring for some reason
+"call togglebg#map("<F5>")
+
+" TabBar Customization
+
+let g:Tb_SplitBelow=1
+let g:Tb_MaxSize=0
+let g:Tb_MoreThanOne=0
+let g:Tb_ModSelTarget=1
