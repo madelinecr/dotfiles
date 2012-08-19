@@ -1,0 +1,16 @@
+general {
+}
+
+order += "disk /"
+order += "wireless wlan0"
+order += "load"
+order += "time"
+
+disk "/" {
+  format = "%free"
+}
+
+wireless wlan0 {
+  format_up = "W: (%quality at %essid, %bitrate) %ip"
+  format_down = "W: down"
+}
