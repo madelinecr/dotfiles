@@ -70,29 +70,40 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindcode $mod+d focus child
 
+set $ws1 web
+set $ws2 comm
+set $ws3 code
+set $ws4 debug
+set $ws5 five
+set $ws6 six
+set $ws7 seven
+set $ws8 eight
+set $ws9 nine
+set $ws10 monitor
+
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
 
 # move focused container to workspace
-bindsym $mod+Shift+exclam move container to workspace 1
-bindsym $mod+Shift+at move container to workspace 2
-bindsym $mod+Shift+numbersign move container to workspace 3
-bindsym $mod+Shift+dollar move container to workspace 4
-bindsym $mod+Shift+percent move container to workspace 5
-bindsym $mod+Shift+asciicircum move container to workspace 6
-bindsym $mod+Shift+ampersand move container to workspace 7
-bindsym $mod+Shift+asterisk move container to workspace 8
-bindsym $mod+Shift+parenleft move container to workspace 9
-bindsym $mod+Shift+parenright move container to workspace 10
+bindsym $mod+Shift+exclam move container to workspace $ws1
+bindsym $mod+Shift+at move container to workspace $ws2
+bindsym $mod+Shift+numbersign move container to workspace $ws3
+bindsym $mod+Shift+dollar move container to workspace $ws4
+bindsym $mod+Shift+percent move container to workspace $ws5
+bindsym $mod+Shift+asciicircum move container to workspace $ws6
+bindsym $mod+Shift+ampersand move container to workspace $ws7
+bindsym $mod+Shift+asterisk move container to workspace $ws8
+bindsym $mod+Shift+parenleft move container to workspace $ws9
+bindsym $mod+Shift+parenright move container to workspace $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+C reload
