@@ -71,7 +71,7 @@ bindsym $mod+a focus parent
 #bindcode $mod+d focus child
 
 set $ws1 web
-set $ws2 comm
+set $ws2 chat
 set $ws3 code
 set $ws4 debug
 set $ws5 five
