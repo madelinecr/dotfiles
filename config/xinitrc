@@ -1,8 +1,8 @@
 xrdb ~/.Xresources
 xset +fp /usr/share/fonts/local
 xset fp rehash
-exec i3
 sh ~/.fehbg &
+exec i3
 
 # Applications
 dropboxd &
