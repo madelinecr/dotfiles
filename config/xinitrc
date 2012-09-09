@@ -3,6 +3,3 @@ xset +fp /usr/share/fonts/local
 xset fp rehash
 sh ~/.fehbg &
 exec i3
-
-# Applications
-dropboxd &
