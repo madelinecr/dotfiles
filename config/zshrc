@@ -73,3 +73,7 @@ alias gdiff="git diff --color"
 alias gdiffc="git diff --cached --color"
 alias gdiffs="git diff --stat --color"
 alias gdiffsc="git diff --cached --stat --color"
+
+alias i="sudo pacman -S"
+alias s="pacman -Ss"
+alias u="sudo pacman -Syyu; pacman -Qu | wc -l > ~/.paccount"
