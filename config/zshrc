@@ -76,6 +76,9 @@ alias gdiffsc="git diff --cached --stat --color"
 
 alias rootadb="adb kill-server; sudo adb start-server"
 
+alias rakenuke="rake db:drop; rake db:create; rake db:schema:load; rake db:test:prepare"
+alias rakeup="rake db:migrate; rake db:test:prepare"
+
 alias i="sudo pacman -S"
 alias s="pacman -Ss"
 alias u="sudo pacman -Syyu; pacman -Qu | wc -l > ~/.paccount"
