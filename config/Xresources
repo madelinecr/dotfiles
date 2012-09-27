@@ -1,5 +1,5 @@
 URxvt.transparent: true
-URxvt.shading: 15
+URxvt.shading: 10
 URxvt.scrollBar: false
 URxvt.font: -*-terminus-medium-*-*-*-12-*-72-72-c-*-iso10646-*
 
@@ -7,50 +7,6 @@ URxvt.font: -*-terminus-medium-*-*-*-12-*-72-72-c-*-iso10646-*
 URxvt.perl-ext-common: default,matcher
 URxvt.urlLauncher: /usr/bin/chromium
 URxvt.matcher.button: 1
-
-! --- Solarized stuff under here ---
-!
-!*background: #002b36
-!*foreground: #657b83
-!!!*fading: 40
-!*fadeColor: #002b36
-!*cursorColor: #93a1a1
-!*pointerColorBackground: #586e75
-!*pointerColorForeground: #93a1a1
-!
-!!! black dark/light
-!*color0: #073642
-!*color8: #002b36
-!
-!!! red dark/light
-!*color1: #dc322f
-!*color9: #cb4b16
-!
-!!! green dark/light
-!*color2: #859900
-!*color10: #586e75
-!
-!!! yellow dark/light
-!*color3: #b58900
-!*color11: #657b83
-!
-!!! blue dark/light
-!*color4: #268bd2
-!*color12: #839496
-!
-!!! magenta dark/light
-!*color5: #d33682
-!*color13: #6c71c4
-!
-!!! cyan dark/light
-!*color6: #2aa198
-!*color14: #93a1a1
-!
-!!! white dark/light
-!*color7: #eee8d5
-!*color15: #fdf6e3
-!
-
 
 ! --- ~/.Xresources ------------------------------------------------------------
 ! ------------------------------------------------------------------------------
@@ -61,61 +17,60 @@ URxvt.matcher.button: 1
 
 ! --- special colors ---
 
-*background: #0d1926
-*foreground: #647c84
+*background: #122121
+*foreground: #91848c
 
 ! --- standard colors ---
 
 ! black
-*color0: #3d3d3d
+*color0: #333333
 
 ! bright_black
-*color8: #4a4a4a
+*color8: #515151
 
 ! red
-*color1: #835f4c
+*color1: #915b56
 
 ! bright_red
-*color9: #dac8bf
+*color9: #d9c1bf
 
 ! green
-*color2: #4c835f
+*color2: #56915b
 
 ! bright_green
-*color10: #bfdac8
+*color10: #bfd9c1
 
 ! yellow
-*color3: #70834c
+*color3: #8c9156
 
 ! bright_yellow
-*color11: #d0dabf
+*color11: #d7d9bf
 
 ! blue
-*color4: #5f4c83
+*color4: #5b5691
 
 ! bright_blue
-*color12: #c8bfda
+*color12: #c1bfd9
 
 ! magenta
-*color5: #834c70
+*color5: #91568c
 
 ! bright_magenta
-*color13: #dabfd0
+*color13: #d9bfd7
 
 ! cyan
-*color6: #4c7083
+*color6: #568c91
 
 ! bright_cyan
-*color14: #bfd0da
+*color14: #bfd7d9
 
 ! white
-*color7: #808080
+*color7: #e1e1e1
 
 ! bright_white
-*color15: #b0b0b0
+*color15: #ffffff
 
 
 ! ------------------------------------------------------------------------------
 ! --- end of terminal colors section -------------------------------------------
 ! ------------------------------------------------------------------------------
-
