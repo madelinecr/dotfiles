@@ -146,4 +146,9 @@ bar {
         status_command /home/sensae/bin/statusline.sh
         font -*-terminus-medium-*-*-*-12-*-72-72-c-*-iso10646-*
 
+        colors {
+                background #122121
+                statusline #91848c
+                focused_workspace #c1bfd9 #555555 #c1bfd9
+        }
 }
