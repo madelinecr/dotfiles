@@ -29,8 +29,8 @@ task :symlink do
       puts "File #{yellow(dest)} already a symlink, skipping"
     else
       begin
-        File.symlink(src, dest)
         puts "Symlinking #{green(dest)}"
+        File.symlink(src, dest)
       rescue NotImplementedError
         puts "Error: Symlinks are not supported on your system."
       end

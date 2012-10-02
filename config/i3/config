@@ -140,10 +140,21 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Colors
+client.focused #333333 #2e314a #91848c #444444
+client.focused_inactive #333333 #222222 #91848c #444444
+client.unfocused #333333 #222222 #91848c #444444
+
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
         status_command /home/sensae/bin/statusline.sh
         font -*-terminus-medium-*-*-*-12-*-72-72-c-*-iso10646-*
 
+        colors {
+                background #122121
+                statusline #91848c
+                focused_workspace #c1bfd9 #555555 #c1bfd9
+        }
 }
