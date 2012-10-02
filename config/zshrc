@@ -64,6 +64,19 @@ function precmd () {
   z --add "$(pwd -P)"
 }
 
+# Platform Specific aliases
+if [ -e /etc/debian_version ]
+then
+  alias i="sudo aptitude install"
+  alias s="sudo aptitude update"
+  alias u="sudo aptitude upgrade"
+elif [ -e /etc/arch-release ]
+then
+  alias i="sudo pacman -S"
+  alias s="pacman -Ss"
+  alias u="sudo pacman -Syyu; pacman -Qu | wc -l > ~/.paccount"
+fi
+
 # Aliases
 alias gitss="git status -s"
 alias gits="git status"
@@ -78,7 +91,3 @@ alias rootadb="adb kill-server; sudo adb start-server"
 
 alias dbnuke="rake db:drop; rake db:create; rake db:migrate; rake db:test:prepare"
 alias dbup="rake db:migrate; rake db:test:prepare"
-
-alias i="sudo pacman -S"
-alias s="pacman -Ss"
-alias u="sudo pacman -Syyu; pacman -Qu | wc -l > ~/.paccount"
