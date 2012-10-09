@@ -34,6 +34,8 @@ function symlink {
       ln -s $CONFIGDIR/$filename $target
     fi
   done < manifest
+
+  # TODO: Symlink executables in bin to ~/bin
 }
 
 function uninstall {
