@@ -62,6 +62,7 @@ function install {
   for file in $(ls $BINDIR); do
     symlink $BINDIR/$file $HOME/bin/$file
   done
+  echo -e "Install finished."
 }
 
 # Checks for symlinks this script might have created and cleans them up.
