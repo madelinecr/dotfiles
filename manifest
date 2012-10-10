@@ -9,3 +9,4 @@ Xresources
 zshenv
 zshrc
 ssh/config
+unison/default.prf
