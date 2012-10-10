@@ -8,3 +8,4 @@ xinitrc
 Xresources
 zshenv
 zshrc
+ssh/config
