@@ -68,7 +68,7 @@ function precmd () {
 if [ -e /etc/debian_version ]
 then
   alias i="sudo aptitude install"
-  alias s="sudo aptitude update"
+  alias s="aptitude search"
   alias u="sudo aptitude upgrade"
 elif [ -e /etc/arch-release ]
 then
