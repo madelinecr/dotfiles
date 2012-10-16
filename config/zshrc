@@ -40,11 +40,27 @@ case $(uname -s) in
       PATH=$PATH:/home/sensae/android-sdk-linux/tools:/home/sensae/android-sdk-linux/platform-tools
     fi
     eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+
+    # Platform Specific aliases
+    if [ -e /etc/debian_version ]
+    then
+      alias i="sudo aptitude install"
+      alias s="sudo aptitude update"
+      alias u="sudo aptitude upgrade"
+    elif [ -e /etc/arch-release ]
+    then
+      alias i="sudo pacman -S"
+      alias s="pacman -Ss"
+      alias u="sudo pacman -Syyu; pacman -Qu | wc -l > ~/.paccount"
+    fi
   ;;
   Darwin)
     OS="darwin"
     plugins=(git osx)
     export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin
+    alias i="brew install"
+    alias s="brew search"
+    alias u="brew update"
   ;;
   *)
     OS="unknown"
@@ -63,19 +79,6 @@ PATH=$PATH:$HOME/.rvm/bin:$HOME/bin # Add RVM to PATH for scripting
 function precmd () {
   z --add "$(pwd -P)"
 }
-
-# Platform Specific aliases
-if [ -e /etc/debian_version ]
-then
-  alias i="sudo aptitude install"
-  alias s="sudo aptitude update"
-  alias u="sudo aptitude upgrade"
-elif [ -e /etc/arch-release ]
-then
-  alias i="sudo pacman -S"
-  alias s="pacman -Ss"
-  alias u="sudo pacman -Syyu; pacman -Qu | wc -l > ~/.paccount"
-fi
 
 # Aliases
 alias gitss="git status -s"
