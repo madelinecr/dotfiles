@@ -6,7 +6,7 @@ program configuration files. It's powered by a simple little Rakefile.
 ## Usage
 
 Files and folders placed in the config dir without a preceding period will be
-automatically expanded to their proper file path in $HuOME. For example, 
+automatically expanded to their proper file path in $HOME. For example, 
 "config/vimrc" will be auto-expanded to "~/.vimrc".
 
 ### Commands

@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+fehbg_file = "~/.fehbg"
+
+if ARGV.length == 1
+  feh_cmd = %(feh --bg-fill #{File.expand_path(ARGV.first)})
+  puts "Placing command #{feh_cmd} in #{fehbg_file}"
+  File.open(File.expand_path(fehbg_file), 'wt') do |f|
+    f.puts(feh_cmd)
+  end
+  system(feh_cmd)
+end

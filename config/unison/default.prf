@@ -1,0 +1,9 @@
+# Unison preferences file
+root = /home/sensae
+root = ssh://vertice//home/sensae
+
+path = assignments
+path = bin
+path = code
+path = notes
+path = textbooks
