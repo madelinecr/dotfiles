@@ -1,7 +1,7 @@
 ## Dotfiles!
 
 This is my dotfiles repository for storing, backing up and sharing my shell and
-program configuration files. It's powered by a simple little Rakefile.
+program configuration files. It's powered by a simple little shell script.
 
 ## Usage
 
@@ -9,9 +9,11 @@ Files and folders placed in the config dir without a preceding period will be
 automatically expanded to their proper file path in $HOME. For example, 
 "config/vimrc" will be auto-expanded to "~/.vimrc".
 
+It will also automatically symlink binaries. "bin/z.sh" will be auto-expanded to
+"~/bin/z.sh".
+
 ### Commands
 
-`rake symlinks` Default task, generates symlinks
+`./install.sh` Default task, generates symlinks
 
-`rake uninstall` Removes symlinks. Be careful with this! It isn't as gentle as
-it should be (for now).
+`./install.sh uninstall` Removes symlinks.
