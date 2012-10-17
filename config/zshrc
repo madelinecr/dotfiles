@@ -39,7 +39,10 @@ case $(uname -s) in
     then
       PATH=$PATH:/home/sensae/android-sdk-linux/tools:/home/sensae/android-sdk-linux/platform-tools
     fi
-    eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+    if [ which keychain &> /dev/null ]
+    then
+      eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
+    fi
 
     # Platform Specific aliases
     if [ -e /etc/debian_version ]
@@ -74,6 +77,11 @@ source $ZSH/oh-my-zsh.sh
 
 PATH=$PATH:$HOME/.rvm/bin:$HOME/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+if [ which vim &> /dev/null ]
+then
+  export EDITOR=vim
+fi
 
 . $HOME/bin/z.sh
 function precmd () {
