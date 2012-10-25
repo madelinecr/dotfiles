@@ -30,6 +30,11 @@ ZSH_THEME="lambda"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
+
+# ------------------------------------------------------------------------------
+## Platform specific environment configuration
+# ------------------------------------------------------------------------------
+
 case $(uname -s) in
   Linux)
     OS="linux"
@@ -44,7 +49,7 @@ case $(uname -s) in
       eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
     fi
 
-    # Platform Specific aliases
+    #distro specific
     if [ -e /etc/debian_version ]
     then
       alias i="sudo aptitude install"
@@ -73,24 +78,29 @@ esac
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+#rvm
+PATH=$PATH:$HOME/.rvm/bin:$HOME/bin
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-PATH=$PATH:$HOME/.rvm/bin:$HOME/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
+#$editor
 if [ which vim &> /dev/null ]
 then
   export EDITOR=vim
 fi
 
+#z
 . $HOME/bin/z.sh
 function precmd () {
   z --add "$(pwd -P)"
 }
-#
-# Aliases
+# ------------------------------------------------------------------------------
+## Aliases
+# ------------------------------------------------------------------------------
+
+#git
 alias gitss="git status -s"
 alias gits="git status"
+alias push="git push"
 alias gita="git add"
 alias gitc="git commit"
 alias gdiff="git diff --color"
@@ -98,7 +108,9 @@ alias gdiffc="git diff --cached --color"
 alias gdiffs="git diff --stat --color"
 alias gdiffsc="git diff --cached --stat --color"
 
+#android
 alias rootadb="adb kill-server; sudo adb start-server"
 
+#rails
 alias dbnuke="rake db:drop; rake db:create; rake db:migrate; rake db:test:prepare"
 alias dbup="rake db:migrate; rake db:test:prepare"
