@@ -22,3 +22,6 @@
 [submodule "config/vim/bundle/L9"]
 	path = config/vim/bundle/L9
 	url = git@github.com:vim-scripts/L9.git
+[submodule "config/vim/bundle/scss-syntax"]
+	path = config/vim/bundle/scss-syntax
+	url = git@github.com:cakebaker/scss-syntax.vim
