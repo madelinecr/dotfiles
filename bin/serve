@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+s = WEBrick::HTTPServer.new(:Post => 2000, :DocumentRoot => Dir.pwd)
+trap('INT') { s.shutdown }
+s.start
