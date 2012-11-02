@@ -1,7 +1,7 @@
-Host kryten
+Host home
   HostName sensae.dyndns.ws
   User sensae
 
-Host vertice
+Host vps
   HostName 69.55.49.124
   User sensae
