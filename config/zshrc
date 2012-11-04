@@ -102,6 +102,7 @@ alias ls="ls -F --color"
 alias la="ls -aF --color"
 alias ll="ls -lF --color"
 alias lla="ls -alF --color"
+alias lh="ls -lFh"
 
 #git
 alias gitss="git status -s"
