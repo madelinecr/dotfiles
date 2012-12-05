@@ -40,9 +40,11 @@ case $(uname -s) in
     export OS="linux"
     plugins=(git)
     export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
-    if [ -d '/home/sensae/android-sdk-linux' ]
+    if [ -d '/home/sensae/adt-bundle-linux-x86' ]
     then
-      PATH=$PATH:/home/sensae/android-sdk-linux/tools:/home/sensae/android-sdk-linux/platform-tools
+      PATH=$PATH:/home/sensae/adt-bundle-linux-x86/eclipse
+      PATH=$PATH:/home/sensae/adt-bundle-linux-x86/sdk/platform-tools
+      PATH=$PATH:/home/sensae/adt-bundle-linux-x86/sdk/tools
     fi
     if [ which keychain &> /dev/null ]
     then

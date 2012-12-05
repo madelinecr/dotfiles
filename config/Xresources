@@ -1,5 +1,5 @@
 URxvt.transparent: true
-URxvt.shading: 50
+URxvt.shading: 10
 URxvt.scrollBar: false
 URxvt.font: -*-terminus-medium-*-*-*-12-*-72-72-c-*-iso10646-*
 
