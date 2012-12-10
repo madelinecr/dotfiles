@@ -46,7 +46,7 @@ case $(uname -s) in
       PATH=$PATH:/home/sensae/adt-bundle-linux-x86/sdk/platform-tools
       PATH=$PATH:/home/sensae/adt-bundle-linux-x86/sdk/tools
     fi
-    if [ which keychain &> /dev/null ]
+    if [ -e $(which keychain &> /dev/null) ]
     then
       eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
     fi
@@ -87,7 +87,7 @@ PATH=$PATH:$HOME/.rvm/bin:$HOME/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 #$editor
-if [ which vim &> /dev/null ]
+if [ -e $(which vim &> /dev/null) ]
 then
   export EDITOR=vim
 fi
