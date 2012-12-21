@@ -5,3 +5,13 @@ Host home
 Host vps
   HostName 69.55.49.124
   User sensae
+
+Host staging
+  HostName 192.34.56.43
+  ForwardAgent yes
+  User sensae
+
+Host social
+  HostName 204.236.136.120
+  IdentityFile ~/.ssh/ssadmin.pem
+  User ec2-user
