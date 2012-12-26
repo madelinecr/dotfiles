@@ -46,7 +46,7 @@ case $(uname -s) in
       PATH=$PATH:/home/sensae/adt-bundle-linux-x86/sdk/platform-tools
       PATH=$PATH:/home/sensae/adt-bundle-linux-x86/sdk/tools
     fi
-    if [ -e $(which keychain &> /dev/null) ]
+    if [ $(which keychain &> /dev/null) ]
     then
       eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
     fi
