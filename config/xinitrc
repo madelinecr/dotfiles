@@ -1,5 +1,11 @@
+#x setup
 xrdb ~/.Xresources
 xset +fp /usr/share/fonts/local
 xset fp rehash
 sh ~/.fehbg &
+
+#application startup
+~/.dropbox-dist/dropboxd &
+
+#wm main loop
 exec i3
