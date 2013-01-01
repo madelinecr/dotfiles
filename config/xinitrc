@@ -6,6 +6,7 @@ sh ~/.fehbg &
 
 #application startup
 ~/.dropbox-dist/dropboxd &
+xflux -z 95928 &
 
 #wm main loop
 exec i3
