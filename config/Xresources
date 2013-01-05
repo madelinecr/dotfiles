@@ -5,7 +5,7 @@ URxvt.font: -*-terminus-medium-*-*-*-12-*-72-72-c-*-iso10646-*
 
 ! URxvt plugins
 URxvt.perl-ext-common: default,matcher
-URxvt.urlLauncher: /usr/bin/chromium
+URxvt.url-launcher: /usr/bin/chromium
 URxvt.matcher.button: 1
 
 ! --- ~/.Xresources ------------------------------------------------------------
