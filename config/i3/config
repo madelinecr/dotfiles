@@ -70,16 +70,16 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindcode $mod+d focus child
 
-set $ws1 www
-set $ws2 chat
-set $ws3 term1
-set $ws4 term2
-set $ws5 media
-set $ws6 gfx
-set $ws7 aux1
-set $ws8 aux2
-set $ws9 aux3
-set $ws10 monitor
+set $ws1 1-www
+set $ws2 2-chat
+set $ws3 3-term1
+set $ws4 4-term2
+set $ws5 5-media
+set $ws6 6-gfx
+set $ws7 7-aux1
+set $ws8 8-aux2
+set $ws9 9-aux3
+set $ws10 0-monitor
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
