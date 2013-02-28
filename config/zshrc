@@ -66,6 +66,7 @@ case $(uname -s) in
       alias u="sudo pacman -Syyu; pacman -Qu | wc -l > ~/.paccount"
       alias setdefault="xdg-mime default"
       alias aurdir="cd /var/abs/local"
+      alias wifi="sudo wifi-menu wlp4s0"
     fi
   ;;
   Darwin)
