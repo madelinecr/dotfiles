@@ -122,6 +122,8 @@ case $OS in
   ;;
 esac
 
+alias encmount="encfs $HOME/Dropbox/encrypted $HOME/enc"
+
 #git
 alias gitss="git status -s"
 alias gits="git status"
