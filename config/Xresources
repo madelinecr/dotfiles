@@ -17,58 +17,58 @@ URxvt.matcher.button: 1
 
 ! --- special colors ---
 
-*background: #122121
-*foreground: #91848c
+URxvt.background: #122121
+URxvt.foreground: #91848c
 
 ! --- standard colors ---
 
 ! black
-*color0: #333333
+URxvt*color0: #333333
 
 ! bright_black
-*color8: #515151
+URxvt*color8: #515151
 
 ! red
-*color1: #915b56
+URxvt*color1: #915b56
 
 ! bright_red
-*color9: #d9c1bf
+URxvt*color9: #d9c1bf
 
 ! green
-*color2: #56915b
+URxvt*color2: #56915b
 
 ! bright_green
-*color10: #bfd9c1
+URxvt*color10: #bfd9c1
 
 ! yellow
-*color3: #8c9156
+URxvt*color3: #8c9156
 
 ! bright_yellow
-*color11: #d7d9bf
+URxvt*color11: #d7d9bf
 
 ! blue
-*color4: #5b5691
+URxvt*color4: #5b5691
 
 ! bright_blue
-*color12: #c1bfd9
+URxvt*color12: #c1bfd9
 
 ! magenta
-*color5: #91568c
+URxvt*color5: #91568c
 
 ! bright_magenta
-*color13: #d9bfd7
+URxvt*color13: #d9bfd7
 
 ! cyan
-*color6: #568c91
+URxvt*color6: #568c91
 
 ! bright_cyan
-*color14: #bfd7d9
+URxvt*color14: #bfd7d9
 
 ! white
-*color7: #e1e1e1
+URxvt*color7: #e1e1e1
 
 ! bright_white
-*color15: #ffffff
+URxvt*color15: #ffffff
 
 
 ! ------------------------------------------------------------------------------
