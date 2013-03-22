@@ -151,6 +151,7 @@ client.unfocused #333333 #222222 #91848c #444444
 bar {
         status_command /home/sensae/bin/statusline.sh
         font -*-terminus-medium-*-*-*-12-*-72-72-c-*-iso10646-*
+        position top
 
         colors {
                 background #122121
