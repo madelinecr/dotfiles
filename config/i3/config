@@ -141,9 +141,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Colors
-client.focused #333333 #2e314a #91848c #444444
-client.focused_inactive #333333 #222222 #91848c #444444
-client.unfocused #333333 #222222 #91848c #444444
+client.focused #222222 #111111 #91848c #222222
+client.focused_inactive #151515 #050505 #91848c #222222
+client.unfocused #151515 #050505 #91848c #222222
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -154,7 +154,7 @@ bar {
         position top
 
         colors {
-                background #122121
+                background #111111
                 statusline #91848c
                 focused_workspace #c1bfd9 #555555 #c1bfd9
         }

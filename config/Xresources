@@ -17,55 +17,55 @@ URxvt.matcher.button: 1
 
 ! --- special colors ---
 
-URxvt.background: #122121
-URxvt.foreground: #91848c
+URxvt.background: #000000
+URxvt.foreground: #b09292
 
 ! --- standard colors ---
 
 ! black
-URxvt*color0: #333333
+URxvt*color0: #293b3b
 
 ! bright_black
-URxvt*color8: #515151
+URxvt*color8: #344040
 
 ! red
-URxvt*color1: #915b56
+URxvt*color1: #bf5357
 
 ! bright_red
-URxvt*color9: #d9c1bf
+URxvt*color9: #bf6367
 
 ! green
-URxvt*color2: #56915b
+URxvt*color2: #41a551
 
 ! bright_green
-URxvt*color10: #bfd9c1
+URxvt*color10: #51a55f
 
 ! yellow
-URxvt*color3: #8c9156
+URxvt*color3: #aea64f
 
 ! bright_yellow
-URxvt*color11: #d7d9bf
+URxvt*color11: #aea75d
 
 ! blue
-URxvt*color4: #5b5691
+URxvt*color4: #416ea5
 
 ! bright_blue
-URxvt*color12: #c1bfd9
+URxvt*color12: #5177a5
 
 ! magenta
-URxvt*color5: #91568c
+URxvt*color5: #bf6053
 
 ! bright_magenta
-URxvt*color13: #d9bfd7
+URxvt*color13: #bf6e63
 
 ! cyan
-URxvt*color6: #568c91
+URxvt*color6: #714da5
 
 ! bright_cyan
-URxvt*color14: #bfd7d9
+URxvt*color14: #7859a5
 
 ! white
-URxvt*color7: #e1e1e1
+URxvt*color7: #876f6f
 
 ! bright_white
 URxvt*color15: #ffffff
