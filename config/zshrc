@@ -104,6 +104,18 @@ then
   export EDITOR=vim
 fi
 
+#save current working directory
+function cd {
+  builtin cd $@
+  pwd > ~/.last_dir
+}
+
+# restore current working directory
+if [ -f ~/.last_dir ] && [ "$TERM" = "rxvt-unicode-256color" ]
+then
+  cd `cat ~/.last_dir`
+fi
+
 #z
 . $HOME/bin/z.sh
 function precmd () {
