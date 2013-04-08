@@ -114,6 +114,9 @@ bindsym $mod+Shift+S exec gksu pm-suspend
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+E exit
 
+# application specific settings
+for_window [class="Skype"] floating enable
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
