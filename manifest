@@ -10,3 +10,4 @@ zshenv
 zshrc
 ssh/config
 eaglerc
+gtkrc-2.0
