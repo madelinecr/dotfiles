@@ -7,9 +7,9 @@ Host vps
   User sensae
 
 Host staging
-  HostName 192.34.56.43
+  HostName 50.18.43.86
   ForwardAgent yes
-  User sensae
+  User ec2-user
 
 Host social
   HostName 204.236.136.120
