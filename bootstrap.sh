@@ -1,8 +1,8 @@
 #!/bin/bash
 
-BASEDIR=$(cd $(dirname $0) && pwd)
-CONFIGDIR=$BASEDIR/config
-BINDIR=$BASEDIR/bin
+SCRIPT_DIR=$(cd $(dirname $0) && pwd)
+SOURCE_DIR=$SCRIPT_DIR/config
+TARGET_DIR=$SCRIPT_DIR/bin
 
 function green {
   echo "\033[32m$1\033[0m"
@@ -55,12 +55,12 @@ function rm_symlink {
 function install {
   echo -e $(green " --- Symlinking Configuration Files --- ")
   while read file; do
-    symlink $CONFIGDIR/$file $HOME/.$file
+    symlink $SOURCE_DIR/$file $HOME/.$file
   done < manifest
 
   echo -e $(green " --- Symlinking Binary Files --- ")
-  for file in $(ls $BINDIR); do
-    symlink $BINDIR/$file $HOME/bin/$file
+  for file in $(ls $TARGET_DIR); do
+    symlink $TARGET_DIR/$file $HOME/bin/$file
   done
   echo -e "Install finished."
 }
@@ -73,7 +73,7 @@ function uninstall {
   done < manifest
 
   echo -e $(green " --- Removing Binary Symlinks --- ")
-  for file in $(ls $BINDIR); do
+  for file in $(ls $TARGET_DIR); do
     rm_symlink $HOME/bin/$file
   done
   echo -e "Uninstall finished. Feel cleaner?"
