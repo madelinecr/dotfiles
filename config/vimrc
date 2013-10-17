@@ -9,8 +9,7 @@ call pathogen#infect()
 
 let g:solarized_termcolors=256
 let g:solarized_hitrail=1
-colorscheme solarized
-set background=dark
+colorscheme molokai
 
 set t_Co=256
 
@@ -27,7 +26,7 @@ let os = substitute(system('uname'), "\n", "", "")
 if os == "Darwin"
   set guifont=Monaco:h9
 else
-  set guifont=Monospace:8
+  set guifont=Monospace:10
 endif
 set vb t_vb=
 syntax on
