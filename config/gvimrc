@@ -1,6 +1,6 @@
 set colorcolumn+=81
 hi ColorColumn guibg=#2d2d2d
-set guifont=Terminus\ 8
+set guifont=Terminus\ 10
 set guioptions-=T
 set guioptions-=m
 set guioptions-=r
