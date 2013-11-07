@@ -25,3 +25,6 @@
 [submodule "config/vim/bundle/scss-syntax"]
 	path = config/vim/bundle/scss-syntax
 	url = git@github.com:cakebaker/scss-syntax.vim
+[submodule "config/vim/bundle/vim-handlebars"]
+	path = config/vim/bundle/vim-handlebars
+	url = https://www.github.com/nono/vim-handlebars.git
