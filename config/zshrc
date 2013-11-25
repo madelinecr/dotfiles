@@ -144,6 +144,8 @@ case $OS in
 esac
 
 alias encmount="encfs $HOME/Dropbox/encrypted $HOME/enc"
+alias gpgls="gpg --list-keys"
+alias gpgpls=" gpg --list-secret-keys"
 
 #git
 alias gitss="git status -s"
