@@ -150,6 +150,7 @@ esac
 alias encmount="encfs $HOME/Dropbox/encrypted $HOME/enc"
 alias gpgls="gpg --list-keys"
 alias gpgpls=" gpg --list-secret-keys"
+alias tmux="tmux -2"
 
 #git
 alias gitss="git status -s"

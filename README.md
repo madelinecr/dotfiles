@@ -14,6 +14,6 @@ It will also automatically symlink binaries. "bin/z.sh" will be auto-expanded to
 
 ### Commands
 
-`./install.sh` Default task, generates symlinks
+`./bootstrap.sh` Default task, generates symlinks
 
-`./install.sh uninstall` Removes symlinks.
+`./bootstrap.sh uninstall` Removes symlinks.
