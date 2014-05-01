@@ -15,5 +15,11 @@ then
   xrandr --output DVI-0 --auto --right-of HDMI-0
 fi
 
+# if ssd automount script exists, execute it
+if [ -f $HOME/bin/automount_ssd.sh ]
+then
+  $HOME/bin/automount_ssd.sh
+fi
+
 #wm main loop
 exec i3
