@@ -28,3 +28,6 @@
 [submodule "config/vim/bundle/vim-handlebars"]
 	path = config/vim/bundle/vim-handlebars
 	url = https://www.github.com/nono/vim-handlebars.git
+[submodule "config/vim/bundle/rust.vim"]
+	path = config/vim/bundle/rust.vim
+	url = https://www.github.com/wting/rust.vim
