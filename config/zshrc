@@ -171,3 +171,6 @@ alias rootadb="adb kill-server; sudo adb start-server"
 #rails
 alias dbnuke="rake db:drop; rake db:create; rake db:migrate; rake db:test:prepare"
 alias dbup="rake db:migrate; rake db:test:prepare"
+
+#network analysis
+alias locals="nmap -sP"
