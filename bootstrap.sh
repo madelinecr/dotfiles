@@ -78,6 +78,11 @@ function install {
     fi
     create_symlink $BIN_DIR/$file $TARGET_DIR/bin/$file
   done
+
+  echo "Initializing git submodules..."
+  if ! $dryrun; then
+    git submodule update --init --recursive
+  fi
   echo "Done"
 }
 
