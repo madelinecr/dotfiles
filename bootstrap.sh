@@ -73,6 +73,9 @@ function install {
 
   echo "Installing binary symlinks..."
   for file in $(ls $BIN_DIR); do
+    if [ ! -d $TARGET_DIR/bin/ ]; then
+      mkdir $TARGET_DIR/bin/
+    fi
     create_symlink $BIN_DIR/$file $TARGET_DIR/bin/$file
   done
   echo "Done"
