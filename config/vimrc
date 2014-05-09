@@ -33,7 +33,10 @@ syntax on
 
 set ruler
 set incsearch
-set textwidth=80 
+set textwidth=100
+set colorcolumn=100
+let &colorcolumn="80,".join(range(120,999),",")
+hi ColorColumn ctermbg=234
 set number
 
 filetype plugin indent on
