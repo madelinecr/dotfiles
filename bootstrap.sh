@@ -81,6 +81,7 @@ function install {
 
   echo "Initializing git submodules..."
   if ! $dryrun; then
+    cd $SCRIPT_DIR
     git submodule update --init --recursive
   fi
   echo "Done"
