@@ -5,7 +5,7 @@ SOURCE_DIR=$SCRIPT_DIR/config
 BIN_DIR=$SCRIPT_DIR/bin
 TARGET_DIR=$HOME
 
-MANIFEST='manifest'
+MANIFEST=$SCRIPT_DIR/manifest
 
 args=("$@")
 dryrun=false
