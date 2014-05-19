@@ -69,7 +69,7 @@ function install {
   echo "Installing dotfile symlinks..."
   while read path; do
     create_symlink $SOURCE_DIR/$path $TARGET_DIR/.$path
-  done < manifest
+  done < $MANIFEST
 
   echo "Installing binary symlinks..."
   for file in $(ls $BIN_DIR); do
