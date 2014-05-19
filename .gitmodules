@@ -1,30 +1,30 @@
 [submodule "config/vim/bundle/nerdtree"]
 	path = config/vim/bundle/nerdtree
-	url = git@github.com:scrooloose/nerdtree
+	url = https://www.github.com/scrooloose/nerdtree
 [submodule "config/vim/bundle/supertab"]
 	path = config/vim/bundle/supertab
-	url = git@github.com:ervandew/supertab.git
+	url = https://www.github.com/ervandew/supertab.git
 [submodule "config/vim/bundle/vim-colors-solarized"]
 	path = config/vim/bundle/vim-colors-solarized
-	url = git@github.com:altercation/vim-colors-solarized.git
+	url = https://www.github.com/altercation/vim-colors-solarized.git
 [submodule "config/vim/bundle/vim-powerline"]
 	path = config/vim/bundle/vim-powerline
-	url = git@github.com:Lokaltog/vim-powerline.git
+	url = https://www.github.com/Lokaltog/vim-powerline.git
 [submodule "config/vim/bundle/vim-rails"]
 	path = config/vim/bundle/vim-rails
-	url = git@github.com:tpope/vim-rails.git
+	url = https://www.github.com/tpope/vim-rails.git
 [submodule "config/vim/bundle/vim-ruby"]
 	path = config/vim/bundle/vim-ruby
-	url = git@github.com:vim-ruby/vim-ruby.git
+	url = https://www.github.com/vim-ruby/vim-ruby.git
 [submodule "config/vim/bundle/FuzzyFinder"]
 	path = config/vim/bundle/FuzzyFinder
-	url = git@github.com:vim-scripts/FuzzyFinder.git
+	url = https://www.github.com/vim-scripts/FuzzyFinder.git
 [submodule "config/vim/bundle/L9"]
 	path = config/vim/bundle/L9
-	url = git@github.com:vim-scripts/L9.git
+	url = https://www.github.com/vim-scripts/L9.git
 [submodule "config/vim/bundle/scss-syntax"]
 	path = config/vim/bundle/scss-syntax
-	url = git@github.com:cakebaker/scss-syntax.vim
+	url = https://www.github.com/cakebaker/scss-syntax.vim
 [submodule "config/vim/bundle/vim-handlebars"]
 	path = config/vim/bundle/vim-handlebars
 	url = https://www.github.com/nono/vim-handlebars.git
