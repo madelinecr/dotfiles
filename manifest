@@ -10,3 +10,6 @@ zshenv
 zshrc
 eaglerc
 gtkrc-2.0
+vagrant.d/Vagrantfile
+vagrant.d/base_pkg.sh
+vagrant.d/dotfiles.sh

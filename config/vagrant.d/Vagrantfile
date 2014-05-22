@@ -1,0 +1,5 @@
+Vagrant.configure("2") do |config|
+  config.ssh.forward_agent = true
+  config.vm.provision :shell, :path => "~/.vagrant.d/base_pkg.sh"
+  config.vm.provision :shell, :path => "~/.vagrant.d/dotfiles.sh", :privileged => false
+end
