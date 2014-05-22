@@ -174,3 +174,8 @@ alias dbup="rake db:migrate; rake db:test:prepare"
 
 #network analysis
 alias locals="nmap -sP"
+
+### Added by the Heroku Toolbelt
+if [ -d /usr/local/heroku ]; then
+  export PATH="$PATH:/usr/local/heroku/bin"
+fi
