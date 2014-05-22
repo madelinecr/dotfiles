@@ -14,6 +14,13 @@ It will also automatically symlink binaries. "bin/z.sh" will be auto-expanded to
 
 ### Commands
 
+`[-s]` Sandbox mode, performs all symlinking operations in the `sandbox`
+ subdirectory of the repository.
+
+`[-d]` Dry run, does not actually perform system commands (mkdir, ln, rm)
+
 `./bootstrap.sh` Default task, generates symlinks
+
+`./bootstrap.sh install` Same as above, generates symlinks
 
 `./bootstrap.sh uninstall` Removes symlinks.
