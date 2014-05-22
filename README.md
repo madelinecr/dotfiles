@@ -1,4 +1,4 @@
-## Dotfiles!
+## My Dotfiles Repo
 
 This is my dotfiles repository for storing, backing up and sharing my shell and
 program configuration files. It's powered by a simple little shell script.
