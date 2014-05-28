@@ -125,6 +125,26 @@ fi
 function precmd () {
   z --add "$(pwd -P)"
 }
+
+# ------------------------------------------------------------------------------
+## User helper functions
+# ------------------------------------------------------------------------------
+
+function sync_music_dbox () {
+  source=$HOME/music
+  destination=$HOME/Dropbox/Music
+  if [ ! -e $source ]; then
+    echo "Directory $source does not exist, not copying files.."
+  elif [ ! -e $destination ]; then
+    echo "Directory $destination does not exist, not copying files.."
+  elif [ -d $source ] && [ -d $destination ]; then
+    echo "Syncing $source to $destination"
+    rsync -vazh $source $destination
+  else
+    echo "General failure synchronizing music to Dropbox folder."
+  fi
+}
+
 # ------------------------------------------------------------------------------
 ## Non-System Aliases
 # ------------------------------------------------------------------------------
