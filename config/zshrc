@@ -145,6 +145,17 @@ function sync_music_dbox () {
   fi
 }
 
+function template () {
+  local target=$HOME/Templates/$1
+  local working_dir=$(pwd)
+  if [[ $# -eq 1 ]] && [ -e $target ]; then
+    echo "Copying $target to $working_dir"
+    cp $target $working_dir
+  else
+    echo "General failure copying template."
+  fi
+}
+
 # ------------------------------------------------------------------------------
 ## Non-System Aliases
 # ------------------------------------------------------------------------------
