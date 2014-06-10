@@ -200,6 +200,10 @@ alias glogv="git log --oneline --graph --shortstat"
 #android
 alias rootadb="adb kill-server; sudo adb start-server"
 
+#rvm
+alias rlist="rvm list"
+alias rglist="rvm gemset list"
+
 #rails
 alias dbnuke="rake db:drop; rake db:create; rake db:migrate; rake db:test:prepare"
 alias dbup="rake db:migrate; rake db:test:prepare"
