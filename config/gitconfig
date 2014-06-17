@@ -1,0 +1,8 @@
+[color]
+	ui = true
+[user]
+	name = Blaine Pace
+	email = blainepace@gmail.com
+[core]
+	excludesfile = /home/sensae/.gitignore
+	autocrlf = input
