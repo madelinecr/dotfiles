@@ -5,4 +5,4 @@
 	email = blainepace@gmail.com
 [core]
 	excludesfile = /home/sensae/.gitignore
-	autocrlf = input
+	autocrlf = false
