@@ -160,6 +160,15 @@ function template () {
   fi
 }
 
+function todo () {
+  echo "Searching for #TODOs..."
+  grep -R "TODO" .
+  if [ -e "todo.txt" ]; then
+    echo "Found todo.txt:"
+    cat todo.txt
+  fi
+}
+
 # ------------------------------------------------------------------------------
 ## Non-System Aliases
 # ------------------------------------------------------------------------------
