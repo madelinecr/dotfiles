@@ -196,6 +196,7 @@ alias gpgls="gpg --list-keys"
 alias gpgsls=" gpg --list-secret-keys"
 alias clip="xclip -sel clip"
 alias tmux="tmux -2"
+alias templates="ls ~/Templates"
 
 #git
 alias gitss="git status -s"
