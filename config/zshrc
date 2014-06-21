@@ -168,7 +168,7 @@ function todo () {
   echo "Searching for #TODOs..."
   grep -R "TODO" .
   if [ -e "todo.txt" ]; then
-    echo "Found todo.txt:"
+    echo "\033[32mFound todo.txt:\033[0m"
     cat todo.txt
   fi
 }
