@@ -50,7 +50,11 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 case $(uname -s) in
   Linux)
     export OS="linux"
-    plugins=(git)
+    if [ $(lspci | grep -i virtualbox | wc -l) -gt 0 ]; then
+      echo "Virtualbox guest detected, not enabling certain options."
+    else
+      plugins=(git)
+    fi
     export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
     if [ -d '/home/sensae/opt/android-studio' ]
     then
