@@ -6,3 +6,5 @@
 [core]
 	excludesfile = /home/sensae/.gitignore
 	autocrlf = false
+[github]
+	user = pacebl
