@@ -169,9 +169,7 @@ function todo () {
   grep -R "TODO" .
   if [ -e "todo.txt" ]; then
     echo "\033[32mFound todo.txt:\033[0m"
-    while read item; do
-      echo " * $item"
-    done < todo.txt
+    sed -n 's/^/ \* /p' todo.txt
   fi
 }
 
