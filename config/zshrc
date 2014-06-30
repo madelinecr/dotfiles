@@ -229,6 +229,9 @@ alias rootadb="adb kill-server; sudo adb start-server"
 alias rlist="rvm list"
 alias rglist="rvm gemset list"
 
+#python
+alias rmpyc="find . -name '*.pyc' -exec rm {} \;"
+
 #rails
 alias dbnuke="rake db:drop; rake db:create; rake db:migrate; rake db:test:prepare"
 alias dbup="rake db:migrate; rake db:test:prepare"
