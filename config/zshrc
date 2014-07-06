@@ -173,6 +173,10 @@ function todo () {
   fi
 }
 
+function findtodo () {
+  find . -name "todo.txt" -exec sh -c 'echo "\n{}"; sed -n "s/^/ \* /p" {}' \;
+}
+
 function needs () {
   if [ ! -e "todo.txt" ]; then
     touch todo.txt
