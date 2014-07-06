@@ -1,5 +1,6 @@
 #!/bin/bash
 
+SCRIPT=$(basename $0)
 SCRIPT_DIR=$(cd $(dirname $0) && pwd)
 SOURCE_DIR=$SCRIPT_DIR/config
 BIN_DIR=$SCRIPT_DIR/bin
@@ -108,7 +109,7 @@ function uninstall {
 }
 
 function usage {
-  echo "Usage: $script [<command>] [-h|--help] [-d|--dry-run] [-s|--sandbox]"
+  echo "Usage: $SCRIPT [<command>] [-h|--help] [-d|--dry-run] [-s|--sandbox]"
   echo "Where <command> is 'install', or 'uninstall'"
   exit 0
 }
