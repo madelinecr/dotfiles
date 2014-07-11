@@ -192,6 +192,25 @@ function needs () {
 }
 
 # ------------------------------------------------------------------------------
+## Ruby functions
+# ------------------------------------------------------------------------------
+
+RUBY_LIB="$MY_RUBY_HOME/lib/ruby/"
+
+# Searches locally installed ruby standard library for files
+function rbfind {
+  echo "Looking for *$1*.rb files in $RUBY_LIB"
+  find $RUBY_LIB -name "*$1*.rb" -printf '%h/\033[1;32m%f\033[0m\n'
+}
+
+# Greps through locally installed ruby standard library files for string
+function rbgrep {
+  local rbdir="$MY_RUBY_HOME/lib/ruby/"
+  echo "Grepping through files in $RUBY_LIB for pattern $1"
+  grep -inR $1 $RUBY_LIB
+}
+
+# ------------------------------------------------------------------------------
 ## Non-System Aliases
 # ------------------------------------------------------------------------------
 
