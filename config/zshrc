@@ -165,12 +165,16 @@ function template () {
 }
 
 function todo () {
-  echo "Searching for #TODOs..."
-  grep -R "TODO" .
   if [ -e "todo.txt" ]; then
     echo "\033[32mFound todo.txt:\033[0m"
     sed -n 's/^/ \* /p' todo.txt
   fi
+}
+
+alias vitodo="vim todo.txt"
+
+function greptodo () {
+  grep -IR "#TODO" .
 }
 
 function findtodo () {
