@@ -23,11 +23,7 @@ set showmatch
 set guioptions-=T
 
 let os = substitute(system('uname'), "\n", "", "")
-if os == "Darwin"
-  set guifont=Monaco:h9
-else
-  set guifont=Monospace:10
-endif
+
 set vb t_vb=
 syntax on
 
