@@ -103,7 +103,7 @@ esac
 source $ZSH/oh-my-zsh.sh
 
 #rvm
-PATH=$PATH:$HOME/.rvm/bin
+export PATH=$PATH:$HOME/.rvm/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 #$editor
