@@ -16,8 +16,10 @@ set t_Co=256
 set autoindent
 set smartindent
 
-set tabstop=2
-set shiftwidth=2
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+" Might not need softtabstop=2 here
+command TabDefault set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+command TabKernel  set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 
 set showmatch
 set guioptions-=T
@@ -36,7 +38,6 @@ hi ColorColumn ctermbg=234
 set number
 
 filetype plugin indent on
-set expandtab
 
 " Shortcuts
 
