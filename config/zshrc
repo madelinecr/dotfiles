@@ -242,6 +242,7 @@ alias gpgsls=" gpg --list-secret-keys"
 alias clip="xclip -sel clip"
 alias tmux="tmux -2"
 alias templates="ls ~/Templates"
+alias sizes="du -h --max-depth=1"
 
 #git
 alias gitss="git status -s"
@@ -264,6 +265,7 @@ alias rlist="rvm list"
 alias rglist="rvm gemset list"
 
 #python
+#TODO Rewrite into clean function
 alias rmpyc="find . -name '*.pyc' -exec rm {} \;"
 
 #rails
