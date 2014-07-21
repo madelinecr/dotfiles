@@ -16,10 +16,18 @@ set t_Co=256
 set autoindent
 set smartindent
 
+" Tab stop settings
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 " Might not need softtabstop=2 here
 command TabDefault set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 command TabKernel  set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
+
+" Text width settings
+set textwidth=80
+let &colorcolumn="".join(range(80,999),",")
+command Tw80  set textwidth=80  | let &colorcolumn="".join(range(80,999),",")
+command Tw100 set textwidth=100 | let &colorcolumn="80,".join(range(100,999),",")
+command Tw120 set textwidth=120 | let &colorcolumn="80,".join(range(120,999),",")
 
 set showmatch
 set guioptions-=T
@@ -28,13 +36,11 @@ let os = substitute(system('uname'), "\n", "", "")
 
 set vb t_vb=
 syntax on
+" Sets column highlight color, needs to be after 'syntax on' line
+hi ColorColumn ctermbg=234
 
 set ruler
 set incsearch
-set textwidth=100
-set colorcolumn=100
-let &colorcolumn="80,".join(range(120,999),",")
-hi ColorColumn ctermbg=234
 set number
 
 filetype plugin indent on
