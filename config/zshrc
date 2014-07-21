@@ -127,7 +127,7 @@ function cd {
 }
 
 # restore current working directory
-if [ -f ~/.last_dir ] && [ "$TERM" = "rxvt-unicode-256color" ]
+if [ -f ~/.last_dir ]
 then
   cd `cat ~/.last_dir`
 fi
