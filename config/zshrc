@@ -254,8 +254,10 @@ alias gdiff="git diff"
 alias gdiffc="git diff --cached"
 alias gdiffs="git diff --stat"
 alias gdiffsc="git diff --cached --stat"
-alias glog="git log --oneline --graph --decorate"
-alias glogv="git log --oneline --graph --decorate --shortstat"
+glog_settings="--oneline --graph --decorate"
+alias glog="git log $glog_settings"
+alias gloga="git log $glog_settings --all"
+alias glogv="git log $glog_settings --shortstat"
 
 #android
 alias rootadb="adb kill-server; sudo adb start-server"
