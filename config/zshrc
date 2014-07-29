@@ -129,7 +129,7 @@ function cd {
   pwd > ~/.last_dir
 }
 
-# restore current working directory
+# restore current working directory on shell load
 if [ -f ~/.last_dir ]
 then
   cd `cat ~/.last_dir`
