@@ -145,7 +145,7 @@ function precmd () {
 ## User helper functions
 # ------------------------------------------------------------------------------
 
-function sync_music_dbox () {
+function sync_dropbox_music () {
   local source=$HOME/music/ # Trailing slash vital, copies contents of dir
   local destination=$HOME/Dropbox/Music
   if [ ! -e $source ]; then
