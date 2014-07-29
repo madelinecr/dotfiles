@@ -212,7 +212,6 @@ function rbfind {
 
 # Greps through locally installed ruby standard library files for string
 function rbgrep {
-  local rbdir="$MY_RUBY_HOME/lib/ruby/"
   echo "Grepping through files in $RUBY_LIB for pattern $1"
   grep -inR $1 $RUBY_LIB
 }
