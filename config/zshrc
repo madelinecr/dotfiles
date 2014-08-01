@@ -238,6 +238,10 @@ case $OS in
   ;;
 esac
 
+#zsh
+alias vizsh="vim ~/.zshrc"
+alias loadzsh="source ~/.zshrc"
+
 alias encmount="encfs $HOME/Dropbox/encrypted $HOME/enc"
 alias gpgls="gpg --list-keys"
 alias gpgsls=" gpg --list-secret-keys"
