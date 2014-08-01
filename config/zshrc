@@ -272,8 +272,11 @@ alias glogv="git log $glog_settings --shortstat"
 alias rootadb="adb kill-server; sudo adb start-server"
 
 #rvm
-alias rlist="rvm list"
-alias rglist="rvm gemset list"
+alias rubies="rvm list"
+alias gemset="rvm gemset"
+alias gemsets="rvm gemset list"
+alias newgemset="rvm gemset create"
+alias usegemset="rvm gemset use"
 
 #python
 #TODO Rewrite into clean function
