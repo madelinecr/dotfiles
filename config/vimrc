@@ -23,11 +23,11 @@ command TabDefault set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 command TabKernel  set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
 
 " Text width settings
-set textwidth=80
-let &colorcolumn="".join(range(80,999),",")
-command Tw80  set textwidth=80  | let &colorcolumn="".join(range(80,999),",")
-command Tw100 set textwidth=100 | let &colorcolumn="80,".join(range(100,999),",")
-command Tw120 set textwidth=120 | let &colorcolumn="80,".join(range(120,999),",")
+set textwidth=81
+let &colorcolumn="".join(range(81,999),",")
+command Tw80  set textwidth=81  | let &colorcolumn="".join(range(81,999),",")
+command Tw100 set textwidth=101 | let &colorcolumn="81,".join(range(101,999),",")
+command Tw120 set textwidth=121 | let &colorcolumn="81,".join(range(121,999),",")
 
 set showmatch
 set guioptions-=T
