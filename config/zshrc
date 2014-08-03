@@ -203,6 +203,21 @@ function needs () {
 }
 
 # ------------------------------------------------------------------------------
+## General functions
+# ------------------------------------------------------------------------------
+
+# General clean function, cleans up intermediate files such as .pyc, .swp and .o
+function clean {
+  echo -e $(yellow "Cleaning .pyc files..")
+  find . -name '*.pyc' -print -exec rm {} \;
+  echo -e $(yellow "Cleaning vim .swp files..")
+  find . -name '*.swp' -print -exec rm {} \;
+  echo -e $(yellow "Cleaning C/C++ object files..")
+  find . -name '*.o'   -print -exec rm {} \;
+  echo -e $(green "Directory clean finished!")
+}
+
+# ------------------------------------------------------------------------------
 ## Ruby functions
 # ------------------------------------------------------------------------------
 
@@ -281,10 +296,6 @@ alias gemset="rvm gemset"
 alias gemsets="rvm gemset list"
 alias newgemset="rvm gemset create"
 alias usegemset="rvm gemset use"
-
-#python
-#TODO Rewrite into clean function
-alias rmpyc="find . -name '*.pyc' -exec rm {} \;"
 
 #rails
 alias dbnuke="rake db:drop; rake db:create; rake db:migrate; rake db:test:prepare"
