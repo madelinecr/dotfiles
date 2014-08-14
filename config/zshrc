@@ -124,7 +124,8 @@ function precmd () {
 # ------------------------------------------------------------------------------
 
 function sync_dropbox_music () {
-  local source=$HOME/music/ # Trailing slash vital, copies contents of dir
+  # Trailing slash vital, copies contents of dir
+  local source=/nfs/kryten/sensae/music/
   local destination=$HOME/Dropbox/Music
   if [ ! -e $source ]; then
     echo "Directory $source does not exist, not copying files.."
