@@ -5,48 +5,17 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="lambda"
 ZSH_THEME="afowler"
+
 # Set this theme up later, needs powerline font hacking
 #ZSH_THEME="agnoster"
 #DEFAULT_USER="sensae"
 
 # zsh settings
 unsetopt nomatch
+COMPLETION_WAITING_DOTS="true"
 
-# Man page colorization
-export LESS_TERMCAP_mb=$'\E[01;31m'
-export LESS_TERMCAP_md=$'\E[01;31m'
-export LESS_TERMCAP_me=$'\E[0m'
-export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;44;33m'
-export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;32m'
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-
-# Helper functions to colorize shell output in either green, yellow or red
+# Output helper functions to make colorizing shell output more expressive
 function green  { echo "\033[32m$1\033[0m" }
 function yellow { echo "\033[33m$1\033[0m" }
 function red    { echo "\033[31m$1\033[0m" }
@@ -63,11 +32,8 @@ case $(uname -s) in
     else
       plugins=(git)
     fi
-    export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
-    if [ -d '/home/sensae/bin' ]
-    then
-      PATH=/home/sensae/bin:$PATH # This entry is first for load order reasons
-    fi
+    export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+    export PATH=$PATH:/usr/bin/core_perl
     if [ -d '/home/sensae/opt/android-studio' ]
     then
       PATH=$PATH:/home/sensae/opt/android-studio/bin
@@ -79,31 +45,20 @@ case $(uname -s) in
       eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
     fi
 
-    #distro specific
+    # Detect distro and export it in a variable
     if [ -e /etc/debian_version ]
     then
-      export distro="debian"
-      alias i="sudo aptitude install"
-      alias s="aptitude search"
-      alias u="sudo aptitude upgrade"
+      export DISTRO="debian"
     elif [ -e /etc/arch-release ]
     then
-      export distro="arch"
-      alias i="sudo pacman -S"
-      alias s="pacman -Ss"
-      alias u="sudo pacman -Syyu; pacman -Qu | wc -l > ~/.paccount"
-      alias setdefault="xdg-mime default"
-      alias aurdir="cd /var/abs/local"
-      alias wifi="sudo wifi-menu wlp4s0"
+      export DISTRO="arch"
     fi
   ;;
   Darwin)
     export OS="darwin"
     plugins=(git osx)
-    export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin
-    alias i="brew install"
-    alias s="brew search"
-    alias u="brew update"
+    export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+    export PATH=$PATH:/usr/local/git/bin:/usr/X11/bin
   ;;
   *)
     OS="unknown"
@@ -111,7 +66,26 @@ case $(uname -s) in
   ;;
 esac
 
+# ------------------------------------------------------------------------------
+## Global environment configuration
+# ------------------------------------------------------------------------------
+
+# Man page colorization
+export LESS_TERMCAP_mb=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[01;44;33m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
+
 source $ZSH/oh-my-zsh.sh
+
+# Local user bin directory
+if [ -d '/home/sensae/bin' ]
+then
+  PATH=/home/sensae/bin:$PATH # This entry is first for load order reasons
+fi
 
 #rvm
 export PATH=$PATH:$HOME/.rvm/bin
@@ -234,6 +208,36 @@ function rbgrep {
   echo "Grepping through files in $RUBY_LIB for pattern $1"
   grep -inR $1 $RUBY_LIB
 }
+
+# ------------------------------------------------------------------------------
+## System administration aliases
+# ------------------------------------------------------------------------------
+
+case $OS in
+  linux)
+    case $DISTRO in
+      debian)
+        alias i="sudo aptitude install"
+        alias s="aptitude search"
+        alias u="sudo aptitude upgrade"
+      ;;
+      arch)
+        alias i="sudo pacman -S"
+        alias s="pacman -Ss"
+        alias u="sudo pacman -Syyu; pacman -Qu | wc -l > ~/.paccount"
+        alias setdefault="xdg-mime default"
+        alias aurdir="cd /var/abs/local"
+        alias wifi="sudo wifi-menu wlp4s0"
+      ;;
+    esac
+  ;;
+  darwin)
+    echo "Detected darwin system"
+    alias i="brew install"
+    alias s="brew search"
+    alias u="brew update"
+  ;;
+esac
 
 # ------------------------------------------------------------------------------
 ## Non-System Aliases
