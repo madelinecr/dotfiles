@@ -263,6 +263,7 @@ esac
 
 #zsh
 alias vizsh="vim ~/.zshrc"
+alias lesszsh="less ~/.zshrc"
 alias loadzsh="source ~/.zshrc"
 
 alias encmount="encfs $HOME/Dropbox/encrypted $HOME/enc"
