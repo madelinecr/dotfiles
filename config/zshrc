@@ -123,6 +123,11 @@ function precmd () {
 ## User helper functions
 # ------------------------------------------------------------------------------
 
+# Download a file with rtorrent. Copies argument with scp to kryten.
+function rtorrent () {
+  scp $1 whatcd@kryten:~/torrents/
+}
+
 function sync_dropbox_music () {
   # Trailing slash vital, copies contents of dir
   local source=/nfs/kryten/sensae/music/
