@@ -130,15 +130,16 @@ function rtorrent () {
 
 function sync_dropbox_music () {
   # Trailing slash vital, copies contents of dir
-  local source=/nfs/kryten/sensae/music/
+  local host=sensae@kryten
+  local source=/home/sensae/music/
   local destination=$HOME/Dropbox/Music
-  if [ ! -e $source ]; then
-    echo "Directory $source does not exist, not copying files.."
+  if ssh $host test ! -e $source; then
+    echo "Directory $source on $host does not exist, not copying files.."
   elif [ ! -e $destination ]; then
     echo "Directory $destination does not exist, not copying files.."
-  elif [ -d $source ] && [ -d $destination ]; then
-    echo "Syncing $source to $destination"
-    rsync -vazh $source $destination
+  elif ssh $host test -d $source && [ -d $destination ]; then
+    echo "Syncing $host:$source to $destination"
+    rsync -vazh $host:$source $destination
   else
     echo "General failure synchronizing music to Dropbox folder."
   fi
@@ -300,7 +301,7 @@ alias gloga="git log $glog_settings --all"
 alias glogv="git log $glog_settings --shortstat"
 
 #android
-alias rootadb="adb kill-server; sudo adb start-server"
+alias rootadb="adb kill-server; sudo ~sensae/opt/android-studio/sdk/platform-tools/adb start-server"
 
 #rvm
 alias rubies="rvm list"
