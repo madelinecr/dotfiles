@@ -133,15 +133,38 @@ function sync_dropbox_music () {
   local host=sensae@kryten
   local source=/home/sensae/music/
   local destination=$HOME/Dropbox/Music
-  if ssh $host test ! -e $source; then
-    echo "Directory $source on $host does not exist, not copying files.."
-  elif [ ! -e $destination ]; then
+  local network_transfer=true
+  if grep -Fxq "kryten" /etc/hostname; then
+    echo "Host is kryten, local operation mode."
+    network_transfer=false;
+  else
+    echo "Host is not kryten, remote operation mode."
+  fi
+
+  # Check that the source exists, either on the remote host or locally
+  if [ "$network_transfer" = true ]; then
+    if ssh $host test ! -d $source; then
+      echo "Directory $source on $host does not exist, not copying files.."
+      return;
+    fi
+  elif [ ! -d $source ]; then
+    echo "Directory $source does not exist, not copying files.."
+    return;
+  fi
+
+  # Check that the destination exists
+  if [ ! -d $destination ]; then
     echo "Directory $destination does not exist, not copying files.."
-  elif ssh $host test -d $source && [ -d $destination ]; then
-    echo "Syncing $host:$source to $destination"
+    return;
+  fi
+
+  # Perform copy
+  if [ "$network_transfer" = true ]; then
+    echo "Syncing $host:$source to $destination: "
     rsync -vazh $host:$source $destination
   else
-    echo "General failure synchronizing music to Dropbox folder."
+    echo "Syncing $source to $destination: "
+    rsync -vazh $source $destination
   fi
 }
 
