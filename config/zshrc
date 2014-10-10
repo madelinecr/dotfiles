@@ -262,7 +262,6 @@ case $OS in
     esac
   ;;
   darwin)
-    echo "Detected darwin system"
     alias i="brew install"
     alias s="brew search"
     alias u="brew update"
