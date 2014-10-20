@@ -82,9 +82,9 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 source $ZSH/oh-my-zsh.sh
 
 # Local user bin directory
-if [ -d '/home/sensae/bin' ]
+if [ -d "$HOME/bin" ]
 then
-  PATH=/home/sensae/bin:$PATH # This entry is first for load order reasons
+  PATH=$HOME/bin:$PATH # This entry is first for load order reasons
 fi
 
 #rvm
