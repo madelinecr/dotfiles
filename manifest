@@ -12,6 +12,7 @@ eaglerc
 gtkrc-2.0
 gtkrc-2.0.mine
 gitconfig
+gitignore
 gnupg/gpg.conf
 vagrant.d/Vagrantfile
 vagrant.d/base_pkg.sh
