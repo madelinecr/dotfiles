@@ -12,7 +12,7 @@ ZSH_THEME="afowler"
 #DEFAULT_USER="sensae"
 
 # zsh settings
-unsetopt nomatch
+# unsetopt nomatch
 COMPLETION_WAITING_DOTS="true"
 
 # Output helper functions to make colorizing shell output more expressive
@@ -344,3 +344,4 @@ alias locals="nmap -sP"
 if [ -d /usr/local/heroku ]; then
   export PATH="$PATH:/usr/local/heroku/bin"
 fi
+
