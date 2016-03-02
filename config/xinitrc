@@ -2,24 +2,24 @@
 xrdb ~/.Xresources
 xset +fp /usr/share/fonts/local
 xset fp rehash
-sh ~/.fehbg &
-wicd-gtk -t &
+#sh ~/.fehbg &
+#wicd-gtk -t &
 
 #application startup
-~/.dropbox-dist/dropboxd &
-xflux -z 95928 &
+#~/.dropbox-dist/dropboxd &
+#xflux -z 95928 &
 
 #dualhead setup
-if cat /etc/hostname | grep -q nix
-then
-  xrandr --output DVI-0 --auto --right-of HDMI-0
-fi
+#if cat /etc/hostname | grep -q nix
+#then
+#  xrandr --output DVI-0 --auto --right-of HDMI-0
+#fi
 
 # if ssd automount script exists, execute it
-if [ -f $HOME/bin/automount_ssd.sh ]
-then
-  $HOME/bin/automount_ssd.sh
-fi
+#if [ -f $HOME/bin/automount_ssd.sh ]
+#then
+#  $HOME/bin/automount_ssd.sh
+#fi
 
 #wm main loop
 exec i3
