@@ -4,8 +4,8 @@ URxvt.scrollBar: false
 URxvt.font: -*-terminus-medium-*-*-*-12-*-72-72-c-*-iso10646-*
 
 ! URxvt plugins
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/chromium
+URxvt.perl-ext-common: default,matcher,url-select
+URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
 
 ! --- ~/.Xresources ------------------------------------------------------------
