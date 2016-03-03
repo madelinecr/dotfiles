@@ -2,7 +2,7 @@ general {
   color_good = "#00FF00"
 }
 
-order += "battery 1"
+order += "battery 0"
 order += "disk /"
 order += "wireless wlan0"
 order += "load"
@@ -18,7 +18,8 @@ wireless wlan0 {
   format_down = "w down"
 }
 
-battery 1 {
+battery 0 {
   format = "b %percentage[%remaining]"
+  path = "/sys/class/power_supply/BAT0/uevent"
   last_full_capacity = true
 }
