@@ -4,7 +4,7 @@ general {
 
 order += "battery 0"
 order += "disk /"
-order += "wireless wlan0"
+order += "wireless wlp3s0"
 order += "load"
 order += "time"
 
@@ -13,7 +13,7 @@ disk "/" {
   format = "/ %free"
 }
 
-wireless wlan0 {
+wireless wlp3s0 {
   format_up = "w %quality %essid %bitrate %ip"
   format_down = "w down"
 }
