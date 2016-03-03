@@ -2,7 +2,7 @@
 xrdb ~/.Xresources
 xset +fp /usr/share/fonts/local
 xset fp rehash
-#sh ~/.fehbg &
+sh ~/.fehbg &
 #wicd-gtk -t &
 
 #application startup
