@@ -5,6 +5,6 @@
 	email = blainepace@gmail.com
 [core]
 	excludesfile = ~/.gitignore
-	autocrlf = false
+	autocrlf = input
 [github]
 	user = pacebl
