@@ -22,6 +22,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+Q kill
+bindsym $mod+Ctrl+l exec i3lock -i ~/Wallpapers/z9Cfw9E.png
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -152,7 +153,7 @@ client.unfocused #151515 #050505 #91848c #222222
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command /home/sensae/bin/statusline.sh
+        status_command /home/pacebl/bin/statusline.sh
         font -*-terminus-medium-*-*-*-12-*-72-72-c-*-iso10646-*
         position top
 
