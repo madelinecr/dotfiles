@@ -99,7 +99,8 @@ then
 fi
 
 #less syntax highlighting
-export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+LESSPIPE=`which src-hilite-lesspipe.sh`
+export LESSOPEN="| ${LESSPIPE} %s"
 export LESS=' -R '
 
 #save current working directory
