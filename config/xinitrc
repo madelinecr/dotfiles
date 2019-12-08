@@ -1,4 +1,5 @@
 #x setup
+xrandr --output DP-2 --auto --output DP-1 --auto --right-of DP-2
 xrdb ~/.Xresources
 xset +fp /usr/share/fonts/local
 xset fp rehash
