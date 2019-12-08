@@ -34,6 +34,7 @@ case $(uname -s) in
     fi
     export PATH=$PATH:/usr/local/bin:/usr/bin:/bin
     export PATH=$PATH:/usr/local/sbin:/usr/sbin:/sbin
+    export PATH=$PATH:$HOME/software/keyringer
     export PATH=$PATH:/usr/bin/core_perl
     if [ -d '/home/sensae/opt/android-studio' ]
     then
@@ -89,7 +90,7 @@ then
 fi
 
 #rvm
-export PATH=$PATH:$HOME/.rvm/bin
+export PATH=$HOME/.rvm/bin:$PATH
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 #$editor
@@ -99,7 +100,7 @@ then
 fi
 
 #less syntax highlighting
-LESSPIPE=`which src-hilite-lesspipe.sh`
+LESSPIPE=/usr/bin/src-hilite-lesspipe.sh
 export LESSOPEN="| ${LESSPIPE} %s"
 export LESS=' -R '
 
@@ -282,6 +283,7 @@ case $OS in
     alias ll="ls -lF --color"
     alias lla="ls -alF --color"
     alias lh="ls -lFh"
+    alias kr="keyringer"
   ;;
   darwin)
     alias ls="ls -FG"
