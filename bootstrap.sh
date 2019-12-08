@@ -75,6 +75,9 @@ function install {
       mkdir -p $target_subdir
     fi
     create_symlink $SOURCE_DIR/$path $TARGET_DIR/.$path
+    # gnupg permissions
+    echo -e $(yellow "Setting permissions to 0600 for gpg.conf..")
+    chmod 700 ~/.gnupg
   done < $MANIFEST
 
   echo "Installing binary symlinks..."
