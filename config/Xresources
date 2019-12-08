@@ -3,6 +3,8 @@ URxvt.shading: 10
 URxvt.scrollBar: false
 URxvt.font: -*-terminus-medium-*-*-*-12-*-72-72-c-*-iso10646-*
 
+Xcursor.size: 16
+
 ! URxvt plugins
 URxvt.perl-ext-common: default,matcher,url-select
 URxvt.url-launcher: /usr/bin/firefox
