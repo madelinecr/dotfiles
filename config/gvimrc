@@ -3,10 +3,9 @@ hi ColorColumn guibg=#2d2d2d
 if os == "Darwin"
   set guifont=Monaco:h9
 else
-  set guifont=Ubuntu\ Mono:10
+  set guifont=Terminus\ Medium:10
 endif
 
-set guifont=Ubuntu\ Mono\ 10
 set guioptions-=T
 set guioptions-=m
 set guioptions-=r
