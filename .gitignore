@@ -1,3 +1,4 @@
 *.swp
 config/vim/.netrwhist
 sandbox
+config/ssh
