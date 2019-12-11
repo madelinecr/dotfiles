@@ -95,6 +95,12 @@ function install {
     git submodule update --init --recursive
   fi
   echo "Done"
+
+  echo "Tightening permissions on \$HOME..."
+  if ! $dryrun; then
+    chmod o-rx $HOME
+  fi
+  echo "Done"
 }
 
 # Checks for symlinks this script might have created and cleans them up.
