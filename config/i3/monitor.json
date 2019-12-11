@@ -1,0 +1,210 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.333333333333333,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 292,
+               "width": 484,
+               "x": 0,
+               "y": 0
+            },
+            "name": "htop",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^urxvt$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 292,
+               "width": 484,
+               "x": 0,
+               "y": 0
+            },
+            "name": "watch -n 0.2 w",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^urxvt$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 292,
+               "width": 484,
+               "x": 0,
+               "y": 0
+            },
+            "name": "averyp@publicserver-01: ~",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^urxvt$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.333333333333333,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 292,
+               "width": 484,
+               "x": 0,
+               "y": 0
+            },
+            "name": "htop",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^urxvt$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 292,
+               "width": 484,
+               "x": 0,
+               "y": 0
+            },
+            "name": "watch -n 0.2 w",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^urxvt$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 292,
+               "width": 484,
+               "x": 0,
+               "y": 0
+            },
+            "name": "averyp@obscura: ~",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^urxvt$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.333333333333333,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 292,
+               "width": 484,
+               "x": 0,
+               "y": 0
+            },
+            "name": "htop",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^urxvt$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 292,
+               "width": 484,
+               "x": 0,
+               "y": 0
+            },
+            "name": "watch -n 0.2 w",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^urxvt$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 292,
+               "width": 484,
+               "x": 0,
+               "y": 0
+            },
+            "name": "averyp@kryten: ~",
+            "percent": 0.333333333333333,
+            "swallows": [
+               {
+               "class": "^URxvt$",
+               "instance": "^urxvt$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
