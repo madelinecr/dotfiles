@@ -83,6 +83,9 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 
 source $ZSH/oh-my-zsh.sh
 
+# Security related stuff
+umask 027
+
 # Local user bin directory
 if [ -d "$HOME/bin" ]
 then
