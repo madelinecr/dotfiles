@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-i3-msg "append_layout $HOME/.i3/monitor4.json"
+i3-msg "append_layout $HOME/.i3/16pack.json"
 
 for value in {1..4}
 do
