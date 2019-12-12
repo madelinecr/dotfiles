@@ -114,10 +114,11 @@ function cd {
 }
 
 # restore current working directory on shell load
-if [ -f ~/.last_dir ]
-then
-  cd `cat ~/.last_dir`
-fi
+# Disabled this for now, is more trouble than its worth
+#if [ -f ~/.last_dir ]
+#then
+#  cd `cat ~/.last_dir`
+#fi
 
 #z
 . $HOME/bin/z.sh
