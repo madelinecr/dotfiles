@@ -47,9 +47,9 @@ filetype plugin indent on
 
 " Shortcuts
 
-map <C-f> :NERDTreeToggle<CR>
 map <C-j> :FufCoverageFile<CR>
 map <C-i> :FufRenewCache<CR>
+map <C-p> :CtrlP<CR>
 " Erroring for some reason
 "call togglebg#map("<F5>")
 

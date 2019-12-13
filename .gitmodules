@@ -1,6 +1,3 @@
-[submodule "config/vim/bundle/nerdtree"]
-	path = config/vim/bundle/nerdtree
-	url = https://www.github.com/scrooloose/nerdtree
 [submodule "config/vim/bundle/supertab"]
 	path = config/vim/bundle/supertab
 	url = https://www.github.com/ervandew/supertab.git
@@ -31,3 +28,6 @@
 [submodule "config/vim/bundle/rust.vim"]
 	path = config/vim/bundle/rust.vim
 	url = https://www.github.com/wting/rust.vim
+[submodule "config/vim/bundle/ctrlp"]
+	path = config/vim/bundle/ctrlp
+	url = https://www.github.com/kien/ctrlp.vim
