@@ -143,6 +143,19 @@ function rtorrent () {
   scp $1 whatcd@kryten:~/torrents/
 }
 
+# The browseimg function takes files in $1, and, if 1 is pressed, copies
+# them into the directory given at $2. It uses feh for browsing and sorting.
+# browseimg $1 $2
+# browseimg . ~/favyiff/
+function browseimg () {
+  feh -Z --action1 "cp -v %n $2" --action2 "rm $2/%n" $1
+}
+
+# Same kind of feh function, just one that randomizes the input filelist
+function browseimgr () {
+  feh -Zz --action1 "cp -v %n $2" --action2 "rm $2/%n" $1
+}
+
 function sync_dropbox_music () {
   # Trailing slash vital, copies contents of dir
   local host=sensae@kryten
