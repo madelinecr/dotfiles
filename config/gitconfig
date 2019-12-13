@@ -8,3 +8,5 @@
 	autocrlf = input
 [github]
 	user = pacebl
+[gpg]
+	program = gpg2
