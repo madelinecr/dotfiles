@@ -4,15 +4,17 @@
     "floating": "auto_off",
     "geometry": {
        "height": 2124,
-       "width": 2544,
+       "width": 2670,
        "x": 0,
        "y": 0
     },
-    "name": "i3: Layout saving in i3 - Mozilla Firefox",
-    "percent": 0.713020833333333,
+    "name": "Resizing windows in i3 using keyboard only - Unix & Linux Stack Exchange - Mozilla Firefox",
+    "percent": 0.75,
     "swallows": [
        {
-        "class": "^firefox$"
+        "class": "^firefox$",
+        "instance": "^Navigator$",
+        "window_role": "^browser$"
        }
     ],
     "type": "con"
@@ -22,7 +24,7 @@
     "border": "normal",
     "floating": "auto_off",
     "layout": "splitv",
-    "percent": 0.286979166666667,
+    "percent": 0.25,
     "type": "con",
     "nodes": [
         {
@@ -30,16 +32,17 @@
             "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-               "height": 292,
-               "width": 484,
+               "height": 340,
+               "width": 644,
                "x": 0,
                "y": 0
             },
-            "name": "averyp@zoroarch: ~",
-            "percent": 0.5,
+            "name": "i3-save-tree --workspace=1-www > ~/.dotfiles/config/i3/workspace-1.json",
+            "percent": 0.7,
             "swallows": [
                {
-                "class": "^URxvt$"
+                "class": "^URxvt$",
+                "instance": "^urxvt$"
                }
             ],
             "type": "con"
@@ -49,16 +52,17 @@
             "current_border_width": 2,
             "floating": "auto_off",
             "geometry": {
-               "height": 292,
-               "width": 484,
+               "height": 340,
+               "width": 644,
                "x": 0,
                "y": 0
             },
-            "name": "i3-save-tree --workspace 1-www > ~/.i3/workspace-1.json",
-            "percent": 0.5,
+            "name": "averyp@zoroarch: ~",
+            "percent": 0.3,
             "swallows": [
                {
-                "class": "^URxvt$"
+                "class": "^URxvt$",
+                "instance": "^urxvt$"
                }
             ],
             "type": "con"
