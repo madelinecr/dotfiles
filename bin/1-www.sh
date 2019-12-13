@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-i3-msg "append_layout $HOME/.i3/workspace-1.json"
+i3-msg "append_layout $HOME/.i3/1-www.json"
 
 firefox & disown
 sleep 0.2
