@@ -1,7 +1,7 @@
 URxvt.transparent: true
 URxvt.shading: 10
 URxvt.scrollBar: false
-URxvt.font: -*-terminus-medium-*-*-*-12-*-72-72-c-*-iso10646-*
+URxvt.font: -*-terminus-medium-*-*-*-14-*-72-72-c-*-iso10646-*
 
 Xcursor.size: 16
 
@@ -17,61 +17,103 @@ URxvt.matcher.button: 1
 ! --- http://ciembor.github.com/4bit -------------------------------------------
 ! ------------------------------------------------------------------------------
 
-! --- special colors ---
+! New hotness (maybe)
 
-URxvt.background: #000000
-URxvt.foreground: #b09292
-
-! --- standard colors ---
+! special
+*.foreground:   #ffffff
+*.background:   #1d1f21
+*.cursorColor:  #ffffff
 
 ! black
-URxvt*color0: #293b3b
-
-! bright_black
-URxvt*color8: #344040
+*.color0:       #282a2e
+*.color8:       #373b41
 
 ! red
-URxvt*color1: #bf5357
-
-! bright_red
-URxvt*color9: #bf6367
+*.color1:       #cb5151
+*.color9:       #ce6767
 
 ! green
-URxvt*color2: #41a551
-
-! bright_green
-URxvt*color10: #51a55f
+*.color2:       #909469
+*.color10:      #b9bd92
 
 ! yellow
-URxvt*color3: #aea64f
-
-! bright_yellow
-URxvt*color11: #aea75d
+*.color3:       #deb496
+*.color11:      #f0cf90
 
 ! blue
-URxvt*color4: #416ea5
-
-! bright_blue
-URxvt*color12: #5177a5
+*.color4:       #5f819d
+*.color12:      #81a2be
 
 ! magenta
-URxvt*color5: #bf6053
-
-! bright_magenta
-URxvt*color13: #bf6e63
+*.color5:       #80518f
+*.color13:      #ae84bb
 
 ! cyan
-URxvt*color6: #714da5
-
-! bright_cyan
-URxvt*color14: #7859a5
+*.color6:       #3e8d83
+*.color14:      #9abeb9
 
 ! white
-URxvt*color7: #876f6f
+*.color7:       #404549
+*.color15:      #0e0e0e
 
-! bright_white
-URxvt*color15: #ffffff
 
+! Old colors, outdated
+
+! --- special colors ---
+!
+!URxvt.background: #000000
+!URxvt.foreground: #b09292
+!
+!! --- standard colors ---
+!
+!! black
+!URxvt*color0: #293b3b
+!
+!! bright_black
+!URxvt*color8: #344040
+!
+!! red
+!URxvt*color1: #bf5357
+!
+!! bright_red
+!URxvt*color9: #bf6367
+!
+!! green
+!URxvt*color2: #41a551
+!
+!! bright_green
+!URxvt*color10: #51a55f
+!
+!! yellow
+!URxvt*color3: #aea64f
+!
+!! bright_yellow
+!URxvt*color11: #aea75d
+!
+!! blue
+!URxvt*color4: #416ea5
+!
+!! bright_blue
+!URxvt*color12: #5177a5
+!
+!! magenta
+!URxvt*color5: #bf6053
+!
+!! bright_magenta
+!URxvt*color13: #bf6e63
+!
+!! cyan
+!URxvt*color6: #714da5
+!
+!! bright_cyan
+!URxvt*color14: #7859a5
+!
+!! white
+!URxvt*color7: #876f6f
+!
+!! bright_white
+!URxvt*color15: #ffffff
+!
 
 ! ------------------------------------------------------------------------------
 ! --- end of terminal colors section -------------------------------------------
