@@ -168,6 +168,6 @@ bar {
 
 # Start programs on different workspaces and assign them to monitors
 workspace "1-www" output DP-2
-exec $HOME/bin/workspace-1.sh
+exec $HOME/bin/1-www.sh
 workspace "3-chat" output DP-1
 exec discord
