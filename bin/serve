@@ -2,6 +2,6 @@
 
 require 'webrick'
 
-s = WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd)
+s = WEBrick::HTTPServer.new(:Port => ARGV[0], :DocumentRoot => Dir.pwd)
 trap('INT') { s.shutdown }
 s.start
