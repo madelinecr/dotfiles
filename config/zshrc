@@ -321,6 +321,9 @@ case $OS in
   ;;
 esac
 
+#feh for many images (randomized order)
+alias fehthumb="feh -tFZz"
+
 #zsh
 alias vizsh="vim ~/.zshrc"
 alias lesszsh="less ~/.zshrc"
