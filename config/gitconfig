@@ -1,12 +1,12 @@
 [color]
 	ui = true
 [user]
-	name = Blaine Pace
+	name = Avery Pace
 	email = blainepace@gmail.com
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = input
 [github]
-	user = pacebl
+	user = averyada
 [gpg]
 	program = gpg2
