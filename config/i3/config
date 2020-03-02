@@ -118,6 +118,7 @@ bindsym $mod+Shift+E exit
 # application specific settings
 for_window [class="Skype"] floating enable
 assign [class="^discord$"] → "3-chat"
+assign [class="^keybase$"] → "3-chat"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -167,7 +168,8 @@ bar {
 }
 
 # Start programs on different workspaces and assign them to monitors
-workspace "1-www" output DP-2
+workspace "1-www" output DP-1
 exec $HOME/bin/1-www.sh
-workspace "3-chat" output DP-1
+workspace "3-chat" output DP-3
 exec discord
+#exec $HOME/bin/3-chat.sh
