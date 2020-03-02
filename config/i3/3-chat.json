@@ -1,0 +1,43 @@
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1044,
+       "width": 1916,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Activity - Discord",
+    "percent": 0.6,
+    "swallows": [
+       {
+        "class": "^discord$",
+        "instance": "^discord$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1044,
+       "width": 764,
+       "x": 4994,
+       "y": 34
+    },
+    "name": "Keybase",
+    "percent": 0.4,
+    "swallows": [
+       {
+        "class": "^Keybase$",
+        "instance": "^keybase$",
+        "title": "^Keybase$"
+       }
+    ],
+    "type": "con"
+}
+
