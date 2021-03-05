@@ -140,6 +140,10 @@ fi
 ## User helper functions
 # ------------------------------------------------------------------------------
 
+function sync_music () {
+  rsync -avzh rtorrent@rocket:/home/rtorrent/downloads/ ~/Music/
+}
+
 # Download a file with rtorrent. Copies argument with scp to kryten.
 function rtorrent () {
   scp $1 whatcd@kryten:~/torrents/
