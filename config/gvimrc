@@ -1,10 +1,10 @@
 hi ColorColumn guibg=#2d2d2d
 
-if os == "Darwin"
-  set guifont=Monaco:h9
-else
-  set guifont=Terminus\ Medium\ 12
-endif
+#if os == "Darwin"
+#  set guifont=Monaco:h9
+#else
+#  set guifont=Terminus\ Medium\ 8
+#endif
 
 set guioptions-=T
 set guioptions-=m

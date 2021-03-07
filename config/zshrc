@@ -103,11 +103,6 @@ then
   export EDITOR=vim
 fi
 
-#less syntax highlighting
-LESSPIPE=/usr/bin/src-hilite-lesspipe.sh
-export LESSOPEN="| ${LESSPIPE} %s"
-export LESS=' -R '
-
 #save current working directory
 function cd {
   builtin cd $@
