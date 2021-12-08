@@ -1,13 +1,13 @@
 [color]
 	ui = true
 [user]
-	name = Avery Pace
-	email = blainepace@gmail.com
+	name = Madeline Pace
+	email = madeline@cray.lgbt
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = input
 [github]
-	user = averyada
+	user = madelinecr
 [gpg]
 	program = gpg2
 [init]
